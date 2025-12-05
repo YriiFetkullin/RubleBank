@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #424242;
+}
+
+.my-text-color {
+    color: #3A95FF;
+}
+
+#loader {
+    display:none;
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:white;
+    justify-content:center;
+    align-items:center;
+}
+
+.spinner {
+    width:50px;
+    height:50px;
+    border:6px solid #ccc;
+    border-top-color:#3498db;
+    border-radius:50%;
+    animation:spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.logo {
+    padding-right: 38px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.container-top-menu {
+    margin: 0 auto;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.left-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.top_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-size: 14px;
+}
+
+.left-menu-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+}
+
+.left-menu-list a {
+    display: inline-block;
+    padding-right: 24px;
+}
+
+.left-menu-list a:hover {
+    color: #3A95FF;
+}
+
+.right-menu-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.ATM a {
+    display: inline-block;
+    text-decoration: underline;
+    padding-right: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.ATM a:hover {
+    transform: scale(1.05);
+}
+
+.bank-online a {
+    display: inline-block;
+    color: #3A95FF;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bank-online a:hover {
+    transform: scale(1.05);
+}
+
+.container-nav-bar {
+    margin: 0 auto;
+    border-bottom: 1px solid #DEDEDE;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.bottom-menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 0%;
+}
+
+.bottom-menu-list a:hover {
+    color: #3A95FF;
+}
+
+.bottom-menu-list li {
+    padding-right: 41px;
+}
+
+.content-text-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 70px 0px;
+}
+
+.rubles-card {
+    margin-bottom: 70px;
+    background-color: #EFF2F5;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+    height: 400px;
+}
+
+.rubles-card img {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rubles-card-info {
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 200%;
+    font-weight: 350;
+}
+
+.rubles-card-info p {
+    margin-bottom: 42px;
+}
+
+.rubles-card-info .title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-top: 50px;
+    margin-bottom: 44px;
+}
+
+.button-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.button-block button.blue {
+    background-color: #3A95FF;
+    color: #fff;
+    border: 1px solid #3A95FF;
+    padding: 17px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 200px;
+    height: 55px;
+    border-radius: 3px;
+    margin-right: 37px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.button-block button.white {
+    background-color: transparent;
+    color: #3A95FF;
+    border: 1px solid #3A95FF;
+    padding: 17px 51px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 200px;
+    height: 55px;
+    border-radius: 3px;
+    margin-right: 37px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.button-block button.blue:hover {
+    background-color: #fff;
+    color: #3A95FF;
+    transform: scale(1.1);
+}
+
+.button-block button.white:hover {
+    background-color: #3A95FF;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.footer {
+    height: 160px;
+    background-color: #EFF2F5;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.columns-text-bottom {
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 400;
+    color: #424242
+}
+
+.columns-text-top-copyright {
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 37px;
+    margin-bottom: 22px;
+}
+
+.columns-text-top-underline {
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 600;
+    color: #424242;
+    text-decoration: underline;
+    margin-top: 37px;
+    margin-bottom: 22px;
+}
+
+.columns-text-top {
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 400;
+    color: #424242;
+    margin-top: 37px;
+    margin-bottom: 22px;
+}

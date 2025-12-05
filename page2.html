@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дебетовые карты</title>
+    <link rel="stylesheet" href="style_page_two.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        function goToPage() {
+            document.getElementById("banner-rubles").style.display = "none";
+            document.getElementById("banner-travel").style.display = "none";
+            document.getElementById("banner-super").style.display = "none";
+            document.getElementById("goBtn").style.display = "none";
+            document.getElementById("loader").style.display = "flex";
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 1000);
+        }
+    </script>
+
+    <header>
+        <div class="container-top-menu">
+            <div class="container">
+                <div class="top_menu">
+                    <div class="left-block-header">
+                        <div id="goBtn" class="logo" onclick="goToPage()">
+                            <img src="./assets/logo.svg" alt="Логотип">
+                        </div>
+                        <div class="left_menu">
+                            <ul class="left-menu-list">
+                                <li><a href="#">Частным клиентам</a></li>
+                                <li><a href="#">Бизнесу</a></li>
+                                <li><a href="#">Самозанятым</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right_menu">
+                        <nav class="right-menu-list">
+                            <div class="ATM">
+                                <a href="#">Отделения и банкоматы</a>
+                            </div>
+                            <div class="bank-online">
+                                <a href="#">Рубльбанк онлайн</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-nav-bar">
+            <div class="container">
+                <div class="nav-menu">
+                    <ul class="bottom-menu-list">
+                        <li><a href="#">Ипотека</a></li>
+                        <li><a href="#">Кредиты</a></li>
+                        <li><a href="#">Вклады</a></li>
+                        <li><a href="#">Карты</a></li>
+                        <li><a href="#">Инвестиции</a></li>
+                        <li><a href="#">Переводы</a></li>
+                        <li><a href="#">Страхование</a></li>
+                        <li><a href="#">Рефинансирование</a></li>
+                        <li><a href="#">Сервисы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-block">
+        <div class="container">
+            <div class="content-text-title">
+                <p>Дебетовые карты</p>
+            </div>
+            <div class="rubles-card">
+                <img id="banner-rubles" src="./assets/ruble_card.png" alt="" class="rubles-card-img">
+                <div class="rubles-card-info">
+                    <p class="title">Рублькарта</p>
+                    <p>
+                        Моментальный выпуск<br>
+                        Бесплатное обслуживание<br>
+                        Кешбэк до 2%
+                    </p>
+                    <div class="button-block">
+                        <div class="banner-button">
+                            <button class="blue">Оформить карту</button>
+                        </div>
+                        <div class="banner-button">
+                            <button class="white">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rubles-card">
+                <img id="banner-travel" src="./assets/travel_card.png" alt="" class="rubles-card-img">
+                <div class="rubles-card-info">
+                    <p class="title">Travel карта</p>
+                    <p>
+                        Скидки до 20% на отели<br>
+                        Бесплатное обслуживание<br>
+                        Кешбэк до 11%<br>
+                    </p>
+                    <div class="button-block">
+                        <div class="banner-button">
+                            <button class="blue">Оформить карту</button>
+                        </div>
+                        <div class="banner-button">
+                            <button class="white">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rubles-card">
+                <img id="banner-super" src="./assets/super_card.png" alt="" class="rubles-card-img">
+                <div class="rubles-card-info">
+                    <p class="title">Суперкарта</p>
+                    <p>
+                        Моментальный выпуск<br>
+                        Индивидуальный дизайн<br>
+                        Премиальные опции<br>
+                    </p>
+                    <div class="button-block">
+                        <div class="banner-button">
+                            <button class="blue">Оформить карту</button>
+                        </div>
+                        <div class="banner-button">
+                            <button class="white">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="columns-text">
+                    <p class="columns-text-top-copyright">
+                        © 2001-2020 Рубльбанк
+                    </p>
+                    <p class="columns-text-bottom">
+                        Генеральная лицензия на осуществление<br>банковских операций от 11 августа 2015 года.<br>
+                        Регистрационный номер - 1234.
+                    </p>
+                </div>
+                <div class="columns-text">
+                    <p class="columns-text-top-underline">
+                        Обратная связь
+                    </p>
+                    <p class="columns-text-bottom">
+                        Россия, <br>Москва, 113337, ул. Советская, д. 42
+                    </p>
+                </div>
+                <div class="columns-text">
+                    <p class="columns-text-top">
+                        Информация о процентных ставках <br>по договорам банковского вклада<br>с физическими лицами
+                    </p>
+                    <p class="columns-text-bottom">
+                        Информация, обязательная к размещению
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
